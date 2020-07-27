@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<!-- 注意：每个标签必须按顺序写，不然DTD会提示错误：The content of element type "configuration" must match "(properties?,settings?,typeAliases?,typeHandlers?,objectFactory?,objectWrapperFactory?,plugins?,environments?,mappers?)". -->
+<configuration>
+
+    <!-- 设置缓存和延迟加载等等重要的运行时的行为方式 -->
+    <settings>
+
+        <!-- 这个配置使全局的映射器启用或禁用缓存  -->
+        <setting name="cacheEnabled" value="false"/>
+
+        <!--查询数据为null时，返回值为Map，也会输出-->
+        <setting name="callSettersOnNulls" value="true"/>
+
+    </settings>
+
+
+</configuration>
