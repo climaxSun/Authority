@@ -57,7 +57,7 @@ public class ShiroConfiguration {
     }
 
     @Bean
-    AuthorizationAttributeSourceAdvisor authorizationAttributeSourceAdvisor(
+    public AuthorizationAttributeSourceAdvisor authorizationAttributeSourceAdvisor(
             @Qualifier(value = "securityManager") SecurityManager securityManager) {
         AuthorizationAttributeSourceAdvisor advisor = new AuthorizationAttributeSourceAdvisor();
         advisor.setSecurityManager(securityManager);
